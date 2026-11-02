@@ -15,6 +15,7 @@ const NAV = [
   { href: "/swap", label: "Swap" },
   { href: "/pool", label: "Pool" },
   { href: "/keeper", label: "Keeper" },
+  { href: "/docs", label: "Docs" },
 ];
 
 export default function Header() {

@@ -92,3 +92,23 @@ body {
 }
 
 .react-flow__attribution { display: none; }
+
+/* ---------------------------------------------------------------- docs typography */
+.doc { color: var(--ink); font-size: 15px; line-height: 1.7; }
+.doc h2 { font-size: 26px; font-weight: 650; letter-spacing: -0.02em; line-height: 1.25; margin: 0 0 6px; }
+.doc h3 { font-size: 17px; font-weight: 650; letter-spacing: -0.01em; margin: 28px 0 8px; }
+.doc p { margin: 10px 0; color: #24343d; }
+.doc ul, .doc ol { margin: 10px 0; padding-left: 22px; color: #24343d; }
+.doc ul { list-style: disc; }
+.doc ol { list-style: decimal; }
+.doc li { margin: 4px 0; padding-left: 2px; }
+.doc li::marker { color: var(--muted2); }
+.doc a { color: var(--accent-ink); text-decoration: underline; text-decoration-color: color-mix(in srgb, var(--accent) 35%, transparent); text-underline-offset: 3px; }
+.doc a:hover { text-decoration-color: var(--accent); }
+.doc code { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 0.86em; background: var(--line2); border: 1px solid var(--line); border-radius: 5px; padding: 1px 5px; color: var(--ink); }
+.doc strong { font-weight: 650; color: var(--ink); }
+.doc table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 13.5px; }
+.doc th { text-align: left; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); padding: 8px 10px; border-bottom: 1px solid var(--line); }
+.doc td { padding: 8px 10px; border-bottom: 1px solid var(--line2); vertical-align: top; }
+.doc td code { white-space: nowrap; }
+.doc .lead { font-size: 17px; color: var(--muted); margin-top: 4px; }

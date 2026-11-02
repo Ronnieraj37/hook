@@ -183,7 +183,7 @@ export default function Backtest({
               <div className="relative">
                 <span className="absolute left-2.5 top-1.5 text-[13px] text-[var(--muted)]">$</span>
                 <input
-                  className="input !w-[110px] !py-1.5 pl-5 text-[13px]"
+                  className="input !w-[110px] !py-1.5 !pl-5 text-[13px]"
                   inputMode="numeric"
                   value={deposit}
                   onChange={(e) => setDeposit(Math.max(100, Number(e.target.value.replace(/\D/g, "")) || 0))}

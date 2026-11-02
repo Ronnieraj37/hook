@@ -479,7 +479,7 @@ function Picker({ lane, pool, lane_, onPick, onClose }: { lane: LaneId; pool: Po
           </div>
           <div className="relative">
             <Search className="absolute left-2.5 top-1/2 h-4 w-4 -translate-y-1/2 text-[var(--muted)]" />
-            <input autoFocus value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search blocks" className="input pl-8" />
+            <input autoFocus value={q} onChange={(e) => setQ(e.target.value)} placeholder="Search blocks" className="input !pl-8" />
           </div>
           <div className="mt-2 flex gap-1.5">
             {(["All", "When", "Then", "Flow"] as const).map((g) => (
