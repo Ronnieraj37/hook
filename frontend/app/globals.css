@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  /* Alucard palette: deep navy ink, teal accent, soft blue-grey paper */
+  --ink: #0b1f2a;
+  --ink2: #163242;
+  --muted: #5f707a;
+  --muted2: #93a2aa;
+  --line: #dde5e8;
+  --line2: #edf2f4;
+  --paper: #f4f7f8;
+  --white: #ffffff;
+  --accent: #0e8a7e;
+  --accent-ink: #0a6c63;
+  --accent-lt: #e2f3f0;
+  --sage: #15803d;
+  --sage-lt: #ecfdf3;
+  --rose: #dc2626;
+  --rose-lt: #fef2f2;
+  --amber: #c26a06;
+  --amber-lt: #fff7e8;
+  --blue: #2563eb;
+  --blue-lt: #eff6ff;
+  --r: 8px;
+  --r-lg: 12px;
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+.card {
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border-radius: var(--r);
+  padding: 8px 14px;
+  font-weight: 600;
+  font-size: 13px;
+  transition: background 0.15s, border-color 0.15s, opacity 0.15s;
+  cursor: pointer;
+}
+.btn:disabled { opacity: 0.45; cursor: not-allowed; }
+.btn-dark { background: var(--accent); color: white; }
+.btn-dark:hover:not(:disabled) { background: var(--accent-ink); }
+.btn-dark:disabled { background: var(--muted2); }
+.btn-light { background: var(--white); border: 1px solid var(--line); color: var(--ink); }
+.btn-light:hover:not(:disabled) { border-color: var(--accent); }
+.btn-danger { background: var(--white); border: 1px solid var(--line); color: var(--rose); }
+.btn-danger:hover:not(:disabled) { border-color: var(--rose); }
+
+.chip {
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 500;
+  background: var(--white);
+  cursor: pointer;
+}
+.chip[data-on="true"] { background: var(--accent); color: white; border-color: var(--accent); }
+
+.input {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: var(--r);
+  padding: 8px 10px;
+  background: var(--white);
+  outline: none;
+  font-size: 14px;
+}
+.input:focus { border-color: var(--accent); }
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.react-flow__attribution { display: none; }

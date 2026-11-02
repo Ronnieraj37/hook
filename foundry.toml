@@ -1,0 +1,22 @@
+[profile.default]
+bytecode_hash = "none"
+evm_version = "cancun"
+ffi = true
+fs_permissions = [{access = "read-write", path = ".forge-snapshots/"}, {access = "read-write", path = "./deployments"}]
+libs = ["lib"]
+optimizer = true
+optimizer_runs = 200
+out = "out"
+solc_version = "0.8.30"
+src = "src"
+via_ir = true
+# Each call from a test is its own transaction, as on-chain. Needed because ConditionalOrders refuses to execute
+# after a swap in the same transaction (transient flag), and a whole test would otherwise be one transaction.
+isolate = true
+# Unichain-like gas prices (0.0005 gwei base fee, 0.0015 gwei gas price), so keeper and fill pay are non-zero.
+block_base_fee_per_gas = 500000
+gas_price = 1500000
+
+[lint]
+exclude_lints = ["screaming-snake-case-immutable", "screaming-snake-case-const"]
+lint_on_build = false

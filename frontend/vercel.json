@@ -1,0 +1,8 @@
+{
+  "functions": {
+    "api/backtest.py": {
+      "maxDuration": 60,
+      "includeFiles": "api/_data/**"
+    }
+  }
+}

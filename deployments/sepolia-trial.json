@@ -1,0 +1,14 @@
+{
+  "A_takeProfit": 1,
+  "B_stopLossSwap": 2,
+  "C_followUp": 3,
+  "D_compound": 4,
+  "E_crossPoolStop": 5,
+  "F_nativeTakeProfit": 6,
+  "limitBuy": 2,
+  "limitSell": 1,
+  "startTickEth": -198911,
+  "startTickNoHook": -198911,
+  "startTickWbtc": 66570,
+  "startTickWeth": -198911
+}

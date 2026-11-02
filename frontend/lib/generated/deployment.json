@@ -1,0 +1,95 @@
+{
+  "chainId": 11155111,
+  "core": {
+    "conditionalOrders": "0xf2b46cb234E2A901cb8F48e3589B4fB2F2AFcA6f",
+    "deployBlock": 12048765,
+    "permit2": "0x000000000022D473030F116dDEE9F6B43aC78BA3",
+    "poolManager": "0xE03A1074c86CFeDd5C142C4F04F1a1536e203543",
+    "positionManager": "0x429ba70129df741B2Ca2a85BC3A2a3328e5c09b4",
+    "ruleHook": "0x9D4E651bb9a27a9b1406151b3f12Bb1a61B090c0",
+    "swapRouter": "0xf13D190e9117920c703d79B5F33732e10049b115",
+    "faucet": "0xE991cFD1A6EF2f42CdD2A1633a5605D5ea5d18fF"
+  },
+  "tokens": {
+    "DAI": "0x58e283AFE1Db9704EB73cFBB0032b8DEBeC9b719",
+    "LINK": "0xCe340f6faE8c61787f4Af123a97e344b53122510",
+    "USDC": "0x5B7E3901456fEd7158D583FBaA9736fff611Fc5b",
+    "USDT": "0x9289d26a4B38d3CBCc25471f1e69cbbc8d4a8121",
+    "WBTC": "0x3630EEB9719BCabC532f049Ef663991f4E110E74",
+    "WETH": "0x4119A4dab16764aD6056DD6C7f744F6cd8d9B4Ca"
+  },
+  "pools": {
+    "DAI_USDC_100": {
+      "currency0": "0x58e283AFE1Db9704EB73cFBB0032b8DEBeC9b719",
+      "currency1": "0x5B7E3901456fEd7158D583FBaA9736fff611Fc5b",
+      "fee": 100,
+      "hooks": "0x9D4E651bb9a27a9b1406151b3f12Bb1a61B090c0",
+      "poolId": "0xef4ffdebbdd3c0d12bc42d4bf77d193b28bbb5a388b76f5e0fdacab7815109b5",
+      "poolIndex": 6,
+      "tickSpacing": 1
+    },
+    "ETH_USDC_3000": {
+      "currency0": "0x0000000000000000000000000000000000000000",
+      "currency1": "0x5B7E3901456fEd7158D583FBaA9736fff611Fc5b",
+      "fee": 3000,
+      "hooks": "0x9D4E651bb9a27a9b1406151b3f12Bb1a61B090c0",
+      "poolId": "0xf5f6ed3db4cc3df4ff4ef3b4691ffa4eabc16da4d6fa5fe9d02799b5fb9815c5",
+      "poolIndex": 8,
+      "tickSpacing": 60
+    },
+    "LINK_WETH_10000": {
+      "currency0": "0x4119A4dab16764aD6056DD6C7f744F6cd8d9B4Ca",
+      "currency1": "0xCe340f6faE8c61787f4Af123a97e344b53122510",
+      "fee": 10000,
+      "hooks": "0x9D4E651bb9a27a9b1406151b3f12Bb1a61B090c0",
+      "poolId": "0x472c8e78b72ea5c4d2ed2dcb7348172025b68cec10a3fcfb7e2a6896bd33e393",
+      "poolIndex": 5,
+      "tickSpacing": 200
+    },
+    "USDC_USDT_100": {
+      "currency0": "0x5B7E3901456fEd7158D583FBaA9736fff611Fc5b",
+      "currency1": "0x9289d26a4B38d3CBCc25471f1e69cbbc8d4a8121",
+      "fee": 100,
+      "hooks": "0x9D4E651bb9a27a9b1406151b3f12Bb1a61B090c0",
+      "poolId": "0xbc2172cdf8f8af570c5c13cb92aa39f3ebfbe5c7b40c249e838dd6a00bbed266",
+      "poolIndex": 4,
+      "tickSpacing": 1
+    },
+    "WBTC_USDC_3000": {
+      "currency0": "0x3630EEB9719BCabC532f049Ef663991f4E110E74",
+      "currency1": "0x5B7E3901456fEd7158D583FBaA9736fff611Fc5b",
+      "fee": 3000,
+      "hooks": "0x9D4E651bb9a27a9b1406151b3f12Bb1a61B090c0",
+      "poolId": "0xd6c21fcc69c435ff67ead804c90a6abf66f2b9a8edef1d377c55a46320056890",
+      "poolIndex": 2,
+      "tickSpacing": 60
+    },
+    "WETH_USDC_3000": {
+      "currency0": "0x4119A4dab16764aD6056DD6C7f744F6cd8d9B4Ca",
+      "currency1": "0x5B7E3901456fEd7158D583FBaA9736fff611Fc5b",
+      "fee": 3000,
+      "hooks": "0x9D4E651bb9a27a9b1406151b3f12Bb1a61B090c0",
+      "poolId": "0x5496dbc9e099304cf0a8bac23cacae2cf97cea62c135582904bf5a840f9274fa",
+      "poolIndex": 1,
+      "tickSpacing": 60
+    },
+    "WETH_USDC_500_NOHOOK": {
+      "currency0": "0x4119A4dab16764aD6056DD6C7f744F6cd8d9B4Ca",
+      "currency1": "0x5B7E3901456fEd7158D583FBaA9736fff611Fc5b",
+      "fee": 500,
+      "hooks": "0x0000000000000000000000000000000000000000",
+      "poolId": "0xa1b023c23e6ed80dc2a0445b6beded93945f6f73dbabfee746fc437e1f997383",
+      "poolIndex": 7,
+      "tickSpacing": 10
+    },
+    "WETH_WBTC_500": {
+      "currency0": "0x3630EEB9719BCabC532f049Ef663991f4E110E74",
+      "currency1": "0x4119A4dab16764aD6056DD6C7f744F6cd8d9B4Ca",
+      "fee": 500,
+      "hooks": "0x9D4E651bb9a27a9b1406151b3f12Bb1a61B090c0",
+      "poolId": "0xebb3b4660ed73fdd9090d456ed2cef085a3ac7b4e0adf429486e6a66e6424e0d",
+      "poolIndex": 3,
+      "tickSpacing": 10
+    }
+  }
+}
